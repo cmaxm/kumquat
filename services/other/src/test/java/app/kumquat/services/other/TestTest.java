@@ -1,4 +1,4 @@
-package app.kumquat;
+package app.kumquat.services.other;
 
 import org.junit.jupiter.api.Test;
 
