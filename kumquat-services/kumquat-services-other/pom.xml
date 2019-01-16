@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>app.kumquat.services</groupId>
-	<artifactId>other</artifactId>
+	<artifactId>kumquat-services-other</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
