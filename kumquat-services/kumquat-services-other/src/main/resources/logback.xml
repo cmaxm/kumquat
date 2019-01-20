@@ -1,0 +1,16 @@
+<configuration scan="true" scanPeriod="30 seconds">
+
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>c:/work/logs/kumquat-services-other.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <ImmediateFlush>true</ImmediateFlush>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
