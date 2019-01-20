@@ -1,6 +1,11 @@
 language: java
+dist: trusty
 addons:
   sonarcloud:
     organization: peter-filina-github
+    token:
+      secure: "S95pXa6xNP9XJBn+6lfor8k+Feq16tIy0bZ5jSm6SO5ZlFCaeHG1d+MVznvOxqlV+AlLUBidc7167XB1qfDlApBTsCTEEnJIIWoDh2voxVqQIiQb76aYP2/wnsDYe7nYlI6wt2tCPBA+yrdMZVRsp3dNFNn+6BUvG3Mrn1pvmgwPJsyXOQfMCzlx3ijYuaaUkflE27dd2+LRU91hJd4/9R5IAb+nqewHrnkaSV4Ru1GvAVzS54ep/7ho1nwdb9F/y7akYtjM3nRFFTjyTrk1PyGPuq7VLLlhJvylZ1F4RuHAWY8t6xL4obakX10kb9Onhk+FZLQYA7iLQhmIz5ZdxZWbrJhg9zyD3vv7fF0ZajnBDDIu2yRwcNEzhIxPpUasPxqiIhYKyAhBHiZxcrXA8XGUlTGk5Jb9vXCnCgYXtH6F6EmPjf9AZzfypIhF6+yf89VxUe9bU7EKJ5N0cH6ucw1v/4LRnubGbSD5k9vrlxUIRQxkr5HUevkDx86nOuN8UXyUpvwTIddjT6+LaP90EmZmcp9ZuBzJNlgG1t36+slpLzgFZG26A6W5P1VX4UYe25DIUywc+snOwfUMCh0i/aysQqtmNFbvzzeR76bL2JFQ4SqZy8HBv0LTi9g83+IMFUXagQRXDpvn+h1OCWXqBa4W53OeCD0JXFoK+N+w+h0="
+jdk:
+  - oraclejdk8
 script:
-  - mvn sonar:sonar
+  - mvn clean package sonar:sonar
