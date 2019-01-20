@@ -1,1 +1,8 @@
 language: java
+addons:
+  sonarcloud:
+    organization:  peter-filina-github
+    token:
+      secure: gH/cB0Pf84BEXftab3n8Wc7KamkWBqRmQppnN56/j8z7nOkQReFb+AEW4i1kqIn3D9Wgre13M4h26lRXUVA7g/15nMZ8Ce3+1pw/1nNree/ZZcjjXe4a5gp9WN+F86ISAglx/1ncUxQAhZ7McFNeuvh687GwP15qkGkPnyY51l5fLtJS+1UcCkqR8b5HWjgOvLoNqP1IJ/ISmlHojdWaAe1xLaN9Nsoc1pncVQ5nf4SNoa4pyz9ti8XpiP4lg7UY4fWMIPerb5k0g7WmSQ+Xkq0TKwqfmy6C35HJWKqSJRivLBUVyzAW+/X+DylSy3mHal9ZpYbZStFZ9QWPXrRURBbpz+WlPmc4L173pTWZGRr5HnitrUzYbLH0H+FPJl0hwzMSzstA1TkRT+iLOXIGmRhMLjudXO707AupEsgZdYl2EjIwPgykmcBpnGeP4hEknVkJg/xa6JETxhcEvUkBkelKra0ceJyE15Dt/1PSatdkHbiTWiN1hWod35LVq5XBWTwWBrBJQHX3u9tEnhMJzWEQM9fPjyZ7Z51FkuJiNSMhsUUezEwfLXKXcfqzs+fr7J6Bptn3tUUQGkFayVxhgkRUx3V00dZnRwyV/VNn6Qp1ESaFiXOPFeGpeAFs/9MRwRzIi3ndGkBNRD0AQ2wXU58msS9w9wwdRsAs7JQ50vU=
+script:
+  - mvn sonar:sonar
