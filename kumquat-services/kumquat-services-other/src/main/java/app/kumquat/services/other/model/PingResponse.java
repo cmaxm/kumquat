@@ -1,7 +1,5 @@
 package app.kumquat.services.other.model;
 
-import org.joda.time.DateTime;
-
 public class PingResponse {
 
     private String responseText;
@@ -26,5 +24,13 @@ public class PingResponse {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "PingResponse{" +
+                "responseText='" + responseText + '\'' +
+                ", time='" + time + '\'' +
+                '}';
     }
 }

@@ -1,5 +1,6 @@
-package app.kumquat.services.other;
+package app.kumquat.services.other.web;
 
+import app.kumquat.services.other.model.PingResponse;
 import app.kumquat.services.other.web.OtherServlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +21,14 @@ public class OtherServletTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void testPing() {
-        Assert.assertEquals(1, 1);
-        log.debug("response: {}", otherServlet.ping());
+        PingResponse pingResponse = otherServlet.ping();
+        log.debug("response: {}", pingResponse);
+        Assert.assertNotNull(pingResponse);
+    }
+
+    @Test
+    public void testStore() {
+        otherServlet.saveEvent(1);
     }
 
 

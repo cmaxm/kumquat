@@ -6,13 +6,6 @@
     </context-param>
 
 
-
-
-    <servlet>
-        <servlet-name>Test</servlet-name>
-        <servlet-class>app.kumquat.services.other.web.TestServlet</servlet-class>
-    </servlet>
-
     <servlet>
         <servlet-name>springDispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet
@@ -27,11 +20,6 @@
     <servlet-mapping>
         <servlet-name>springDispatcher</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>Test</servlet-name>
-        <url-pattern>/test</url-pattern>
     </servlet-mapping>
 
     <listener>
